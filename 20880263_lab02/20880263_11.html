@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background-color: #e1e5ef;
+            
+        }
+        #contain{
+            min-height: 600px;
+            width: 40%;
+            float: right;
+        }
+        #header{ 
+            background-image: url("./images/picture_fb.png"); 
+            background-repeat: no-repeat;
+            background-position: 0 50px; 
+            background-size: 90% 40%;      
+            min-height: 600px;
+            float: left;
+            width: 60%;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 1.3rem;color: #0a2575;
+        }
+        div span{
+            display: block;
+            width: 75%;
+        }
+        #question{
+            float: left;
+            width: 35%;
+            padding-left: 0;
+            font-family: Arial;
+            font-size: 0.7rem;
+            color: #2041a7;
+        }
+        #datetime{
+            float: left;
+            width: 35%;
+        }
+        #radio{
+            float: left;
+            width: 100%;
+            font-family: Arial;
+            padding: 10px 0 10px 0;
+        }
+        #paragraph1{
+            width: 55%;
+            font-size: 0.7rem;
+            font-family: Arial;
+            color: rgb(128, 119, 119);
+        }
+        #paragraph2{
+            font-weight: bold;
+            font-family: Arial;
+            width: 70%;
+            font-size: 0.75rem;
+            color: rgb(124, 116, 116);
+        }
+        #object1{
+            padding: 10px 0 10px 0;
+        }
+        #object2{
+            padding-bottom: 10px;
+        }
+        p *{
+            color: #2041a7;
+        }
+        #submit{
+            padding: 10px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <span>Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn</span>
+    </div>
+    <div id="contain">
+        <h1 style="font-family: Arial;margin-bottom: 5px;">Đăng ký</h1>
+        <div style="font-family: Arial;padding-bottom: 10px;">Luôn miễn phí</div>
+        <form name="frmpersonal" action="01_Result.html" method="get">
+            <div id="object1">
+                <input type="text" name="ho" size="20" style="height: 22px;" placeholder="Họ">
+                <input type="text" name="ten" size="20" style="height: 22px;" placeholder="Tên">
+            </div>
+            <div id="object2">
+                <input type="text" name="soDT" size="46" style="height: 22px;" placeholder="Số di động hoặc email"><br/>
+            </div>
+            <div id="object2">
+                <input type="text" name="matkhau" size="46" style="height: 22px;" placeholder="Mật khẩu mới"><br/>
+            </div>
+        
+            <div style="padding-top: 10px;font-family: Arial;">Ngày sinh</div><br/>
+            <div id="datetime">
+                <input type="date" name="date">
+            </div>
+            <div id ="question">
+                Tại sao tôi cần cung cấp ngày sinh của mình?
+            </div>
+            <div id="radio">
+                <input type="radio" name="gender" value="female"> Nữ 
+                <input type="radio" name="gender" value="male"> Nam
+            </div>
+            <p id="paragraph1">Bằng cách nhấp và Tạo tài khoản, bạn đồng ý với <a>Điều khoản</a> của chúng tôi và rằng bạn đã đọc <a>Chính sách dữ liệu</a> của chúng tôi, bao gồm <a>Sử dụng cookie</a>. Bạn có thể nhận được thông báo qua SMS từ facebook và có thể bỏ chọn bất kỳ lúc nào.</p>
+            <div id="submit">
+                <input type="submit" value="Tạo tài khoản" style="height: 30px;width:160px;background-color:#66a850;color: #fff;">
+            </div>
+            <p id="paragraph2"><a>Tạo trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.</p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #header{
+            min-height: 120px;
+            text-align: center;
+            line-height: 120px;
+            font-family: sans-serif;
+            font-size: 2.2rem;
+            color: rgb(119, 111, 111);
+        }   
+        #content-left{
+            float: left;
+            width: 60%;
+            min-height: 700px;
+        }   
+        #content-right{
+            background-color: rgb(240, 240, 240);
+            float: left;
+            width: 30%;
+            min-height: 630px;
+            padding-top: 15px;
+        }
+        #object1{
+            min-height: 200px;
+            text-align: center;
+            
+        }
+        #object2{
+            min-height: 400px;
+            text-align: center;
+            
+        }
+        .content{
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 10px 0 0 22px ;
+            font-size: 0.9rem;
+        }
+        div div{
+            margin-bottom: 4px;
+        }
+        #submit{
+            width: 100px;
+            height: 30px;
+            color: #fff;
+            background-color: rgb(94, 94, 233);
+            font-size: 0.8rem;
+        }
+        #article1{
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            padding: 5px 0 5px 0;
+            color: rgb(143, 134, 134);
+        }
+        #article2{
+            font-family: sa ns-serif;
+            padding-bottom: 20px;
+            color: rgb(143, 134, 134);
+        }
+        div a{
+            color: rgb(94, 94, 233);
+        }
+        #footer{
+            color: rgb(146, 138, 138);
+            float: left;
+            width: 30%;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            padding-top:20px ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        Creat your Google Account
+    </div>
+    <div id="content-left">
+        <div id="object1">
+            <div id="article1">One account is all you need</div>
+            <div id="article2">One free account gets you into everything Google</div>
+            <img src="./images/picture_icon.PNG" alt="" width="300px">
+        </div>
+        <div id="object2">
+            <div id="article1">Take it all with you</div>
+            <div id="article2">Switch between devices, and pick up wherever you left off</div>
+            <img src="./images/picture_item.PNG" alt="" width="300px">
+        </div>
+    </div>
+    <form action="01_Result.html" method="get">
+        <div id="content-right">
+            <div class="content">
+                <div>Name</div>
+                <input name="first" type="text" style="width:150px;height:22px" placeholder="First">
+                <input name="last" type="text" style="width:150px;height:22px" placeholder="Last">
+            </div>
+            <div class="content">
+                <div> Choose your user name</div>
+                <input name="username" type="text" style="width:312px;height:22px;" placeholder="@gmail.com">
+            </div>
+            <div class="content">
+                <div> Create your password</div>
+                <input name="password" type="text" style="width:312px;height:22px">
+            </div>
+            <div class="content">
+                <div> Confirm your password</div>
+                <input name="cfrmpassword" type="text" style="width:312px;height:22px">
+            </div>
+            <div class="content">
+                <div>Birthday</div>
+                <input name="month" type="month" style="width:120px" placeholder="month">
+                <input name="day" type="text" style="width:50px;height:19px" placeholder="Day">
+                <input name="year" type="text" style="width:120px;height:19px" placeholder="Year">
+            </div>
+            <div class="content">
+                <div>Gender</div>
+                <select name="gender" id=""  title="I am ..." style="width:320px;height:22px">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="content">
+                <div>Mobile phone</div>
+                <input type="tel" name="phone" placeholder="+84" style="width:312px;height:22px">
+            </div>
+            <div class="content">
+                <div> Your current email address</div>
+                <input name="currentmail" type="text" style="width:312px;height:22px">
+            </div>
+            <div class="content">
+                <div>Location</div>
+                <select name="nation" id="nation" style="width:320px;height:22px">  
+                    <option value="vn" selected="selected">Vietnam (Việt Nam)</option>
+                    <option value="eng">England</option>
+                    <option value="thai">Thailand</option>
+                    <option value="china">China</option>
+                    <option value="america">America</option>
+                </select>
+            </div>
+            <div style="text-align: right;padding: 20px 20px 0 0;">
+                <input id="submit" type="submit" value="Next step">
+            </div>
+        </div>
+    </form>
+    <div id="footer">
+        <a>Learn more</a> about why we ask for this information
+    </div>
+</body>
+</html>
